@@ -10,10 +10,10 @@ export const removeLastContact = async () => {
 
         await fs.writeFile(PATH_DB, JSON.stringify(contacts, undefined, 2), 'utf-8');
 
-        console.log(`Вдалено останній контакт.`);
+        console.log(`Видалено останній контакт.`);
       } catch (error) {
         console.error('Помилка видалення останнього контакту:', error);
       }
 };
 
-await removeLastContact();
+removeLastContact();

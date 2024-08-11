@@ -13,4 +13,4 @@ export const getAllContacts = async () => {
   }
 };
 
- await getAllContacts();
+ getAllContacts();
