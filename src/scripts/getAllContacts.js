@@ -7,10 +7,10 @@ export const getAllContacts = async () => {
     const data = Array.isArray(JSON.parse(dataJSON))
       ? JSON.parse(dataJSON)
       : [];
-    return data;
+    console.log(data);
   } catch (error) {
     console.log(error);
   }
 };
 
- console.log(getAllContacts());
+ await getAllContacts();
